@@ -1,26 +1,26 @@
 #include <stdio.h>
 #include <conio.h>//getch(); prossegir sem dar enter.
 #include <iostream>
-#include <stdlib.h>//randomizar e limpar "cls".
+#include <stdlib.h>//Randomizar e limpar "cls".
 #include <windows.h>//parar o codigo pra ter um entre cada texto/dar cor no conosole.
-#include <time.h>//usando como uma extenção pra randomizar(stdlib.h) em variação do tempo.
-#include <locale.h>//pra "abrasileirar" os caracteres com acentuação.
-#include <string.h>//declarar string sem ter que declarar char/e pra declarar nome aos players.
+#include <time.h>//Usando como uma extensão pra randomizar(stdlib.h) em variação do tempo.
+#include <locale.h>//Pra "abrasileirar" os caracteres com acentuação.
+#include <string.h>//Declarar string sem ter que declarar char/ e pra declarar nome aos players.
 #define PADRAO SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),7)
 #define AZULPRETO SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),3)
 #define VERMPRETO SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),12)
 #define AZULBRANCO SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),113)
 #define VERMBRANCO SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),116)
 #define VERDPRETO SetConsoleTextAttribute(GetStdHandle(STD_OUTPUT_HANDLE),10)
-//todos os defines são usados para mudar a cor do texto(disponivel na biblioteca do windows).
-using namespace std;//usado para declarar uma string sem std:.
+//Todos os defines são usados para mudar a cor do texto(disponivel na biblioteca do windows).
+using namespace std;//Usado para declarar uma string sem "std::".
 int main(){
-	setlocale(LC_ALL,"portuguese");//usar os caracteres acentuados em portugues.
-	srand(time(NULL));//randomizar de acordo com o tempo.
-	int Restart=1,Esc;//o restart é responsável por trocar de jogos(que estão em loops em while)
-	//Esc (escolha) auxilia o restart. ele que é o scanf responsavel por escolher os jogos ou voltar ao menu
+	setlocale(LC_ALL,"portuguese");//Usar os caracteres acentuados em português.
+	srand(time(NULL));//Randomizar de acordo com o tempo.
+	int Restart=1,Esc;//O restart é responsável por trocar de jogos(que estão em loops em while).
+	//Esc (escolha) auxilia o restart. ele que é o scanf responsavel por escolher os jogos ou voltar ao menu.
 	int Cai[5]={rand()%5+1,rand()%5+1,rand()%5+1,rand()%5+1,rand()%5+1};
-	//nossas caixas do jogo dois. ja pra aleatorizar os valores de cada caixa
+	//Nossas caixas do jogo dois. Já pra aleatorizar os valores de cada caixa.
 	int gou1,gou2,gou11,gou22;
     int part=1, Resul;
     char start;
@@ -611,7 +611,7 @@ printf("Bem vindo ao jogo das perguntas!\n"
 			case 4:
 				Restart=0;
 				break;
-		}//SWITCH DAS ESCOLHAS DE JOGOS
+		}//SWITCH DA ESCOLHA DE JOGOS
 	}//FIM DO MENU/JOGO
     return 0;
 }
