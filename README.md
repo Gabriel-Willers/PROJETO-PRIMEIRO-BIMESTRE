@@ -12,3 +12,8 @@ Vou começar explicando as bibliotecas. Como descrito na imagem, além do <stdio
 
 ![image](https://github.com/user-attachments/assets/d0c50806-5617-4a1c-a4c2-aa52b20499e4)
 
+Agora, iremos comentar um pouco sobre nosso menu de seleção dos jogos.
+
+![image](https://github.com/user-attachments/assets/3a6784a2-4661-487c-a808-8addcf31cd18)
+
+
