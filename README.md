@@ -1,4 +1,4 @@
-Este é o README dos alunos: Juan Pablo Correa e Gabriel Willers Teixeira; da turma EC1MA, referente ao PROJETO 1° BIMESTRE.
+Esse é o README dos alunos: Juan Pablo Correa e Gabriel Willers Teixeira; da turma EC1MA, referente ao PROJETO 1° BIMESTRE.
 
 Vou começar explicando as bibliotecas. Como descrito na imagem, além do <stdio.h>, utilizamos:
 - <conio.h> (responsável pela possibilidade de uso do comando getch() que nada mais é que usar de qualquer tecla como forma de prosseguir com algum coamndo, como "printf("\n[Pressione qualquer tecla para prosseguir]\n"); getch();";
