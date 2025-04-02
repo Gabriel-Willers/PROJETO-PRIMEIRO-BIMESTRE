@@ -30,8 +30,11 @@ Sabendo disso, após a seleção do jogo, será apresentada uma mensagem "INICIA
 
 
 
-Agora que já temos uma ideia de como funcionam algumas coisas para que o programa se incicie e funciona, iremos começar a explicar os jogos, começando do 1: 
+Agora que já temos uma ideia de como funcionam algumas coisas para que o programa se incicie e funciona, iremos começar a explicar os jogos: 
+
 O jogo 1, que é de perguntas e respostas, é bem simples. Após sua seleção no menu, é explicado do que se trata o o jogo, logo em seguida a opção de se você deseja iniciar o jogo ou não (S ou N), com o "cin" (do iostream) como dispositivo de entrada da opção, verifica o valor da variável e classifica se é ou não inválida, se for, você irá entrar em um "Do While", este que irá continuar até que selecione alguma entrada válida; se for válida (Sim(S) ou Não(N)), se sim, você entra no no loop "roda!=0" e o jogo começa, se não, volta ao menu. Após o início do jogo, e o "cls" já tendo limpado as mensagens anteriores, você terá 4 alternativas para cada pergunta, e você poderá fazer sua escolha (alt) com entradas de a-d e A-D (com um scanf), as quais se você utilizar alguma entrada inválida, como "T", o programa solicitará que refaça sua escolha até que ele aceite a entrada; logo em seguida, após a verificação da entrada, se acertar, lhe será apresentado que acertou e você somará 1 ponto, se errar, será apresentada a alternativa correta e você não somará pontos, após isso, será trocado o valor de "roda" a cada fim de pergunta, com resposta certa ou errada. Tendo completado todas as perguntas, será printado no console seu placar de pontos e a mensagem de conclusão do jogo, após isso, será exposta a opção de reiniciar o jogo ou voltar para o menu, onde como nos demais loops, se você entrar com alguma variável inválida, será repetida a opção de escolha até o contrário.
+
+
 ![image](https://github.com/user-attachments/assets/bb9db760-d109-41fb-a2ae-f904bfad066b)
 ![image](https://github.com/user-attachments/assets/b70b88e1-9003-43b9-b0f0-9a3070c7c07b)
 
