@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <conio.h>//getch(); prossegir sem dar enter.
 #include <iostream>
-#include <stdlib.h>//Randomizar e limpar "cls".
+#include <stdlib.h>//Randomizar e limpar com system "cls".
 #include <windows.h>//parar o codigo pra ter um entre cada texto/dar cor no conosole.
 #include <time.h>//Usando como uma extensão pra randomizar(stdlib.h) em variação do tempo.
 #include <locale.h>//Pra "abrasileirar" os caracteres com acentuação.
