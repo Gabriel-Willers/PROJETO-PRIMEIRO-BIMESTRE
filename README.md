@@ -44,7 +44,20 @@ O jogo 2, que é Cobra na Caixa, usa rand() para embaralhar o valor de Cai[], qu
 Falando agora do último jogo, nós o iniciamos com um texto explicando os comandos do jogo, como LR, LL, RL etc, que tem como função definir qual gousma inimiga atacar e qual gousma fará a ação, sendo L (left>>>esquerda) e R(right>>>direita), também contamos com o comando de divisão de fúria para reviver ou redistribuir a fúria de suas gousmasa entre si. Após a introdução, o jogo começa com o jogador azul e alterna após cada jogada. Há as limitações como a impossibilidade de divisão e ataque de gousmas desintegradas e também não há como atacar com um gousma já derrotada, a não ser que ela seja revivida, além disso, se você tentar algum destes comandos não válidos, ou simplesmente utilizar qualquer tipo de entrada inválida, será apresentada uma mensagem dizendo que o comando é errado e dirá para tentar novamente. A interface das gousmas foi feita primordialmente sem system cls e sem os defines, então antes ela invertia a cada rodada respectiva a vez de cada jogador, porém, agora ela se mantém igual alterando apenas as cores referentes aos jogadores (vermelho para o jogador  2 e azul para o 1). Em questão de códigos, o Gousmas War tem um while{} principal, dentro dele terá um while que tem a única serventia de mostrar um texto contextualizando o jogo e que nunca mais aparecerá enquanto o usuário não sair do jogo. Os dois ultimos while são responsáveis para ditar a vez de cada jogador. Cada um desses while{} são definidos pela variável part, que guia cada jogada. A maior parte do sistema responsável pela interação com o jogador está dentro deste while que dita a vez de cada jogador, sendo usado cin>>jogada ou (cin>>jogada2 para o jogador 2) para permitir o input do usuário. A leitura deste imput é lido por uma rede de if else if que definem cada resposta equivalente para a jogada depedendo da situação do jogo. Quando um jogador faz uma jogada válida, o jogo executa seu comando e depois redefine part para permitir a vez do próximo jogador, caso a jogada seja inválida, part permanecerá com o mesmo valor, deixando o jogador escolher uma outra jogada. Comandos referentes ao ataque de Gousmas funcionam atribuindo a soma do seu valor com o valor da gousma atacada à essa gousma atacada. Comandos referentes à divisão de gousma funciona subtraindo o valor de uma unidade da gousma que irá doar, e soma um para a gousma que receberá. A interface tem cores diferentes para ser mais visual para os jogadores de quando será a sua vez e quais são suas gousmas, e essas cores são geradas pelos defines que reduziram os códigos referentes para palavras mais curtas. Esses códigos tem a capacidade de mudar a cor do texto e do fundo do texto de tudo que será gerado abaixo desta linha, por isso foi necessário criar também uma variável do código para voltar as cores de texto e fundo para padrão. Quando um dos jogadores perdem as suas duas gousmas, part é definido para um valor que não sejá referente ao while de nenhum dos dois jogadores, retornando ao while principal do jogo, um valor será definido para a variável Resul que imprimirá o resultado da partida para os jogadores, e logo em seguida, dará a opção de sair do jogo ou reiniciar a partida, ao qual retornará todos os valores do jogo para o padrão para dar inicio à uma nova partida.
 
 
-![image](https://github.com/user-attachments/assets/ecc42fdb-6984-4885-88af-a82804909fb3)
+![image](https://github.com/user-attachments/assets/141e7fd0-cf31-418e-a75e-a03d10b262af)
+
+
+![image](https://github.com/user-attachments/assets/d6fe7076-5903-4dc9-9951-3cf5cf7f9de0)
+
+
+![image](https://github.com/user-attachments/assets/495a9cc8-5d85-4db1-981d-d1a72a42b383)
+
+
+
+
+
+
+
 
 Referências:
 Usado para mudar a cor dos textos:
