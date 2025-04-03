@@ -443,50 +443,50 @@ printf("Bem vindo ao jogo das perguntas!\n"
 		   "[L\\R] e \'T\' para dividir para outra gousma\n\n");
             cin>>jogada;printf("\n");
             system("cls");
-                if((jogada=="LT"||jogada=="lt")&&gou1>1&&gou2<5){//DIVISÃO 1PARA 2
+                if((jogada=="LT"||jogada=="lt"||jogada=="Lt"||jogada=="lT")&&gou1>1&&gou2<5){//DIVISÃO 1PARA 2
                     gou1=gou1-1;gou2=gou2+1;part=2;
-                }else if((jogada=="LT"||jogada=="lt")&&(gou1<=1||gou2==5)){
+                }else if((jogada=="LT"||jogada=="lt"||jogada=="Lt"||jogada=="lT")&&(gou1<=1||gou2==5)){
                     printf("Seus níveis de fúria não permitem divisão!\n"
                            "Jogue novamente!\n");part=1;
                 }
-                else if((jogada=="RT"||jogada=="rt")&&gou2>1&&gou1<5){//DIVISÃO 2PARA 1
+                else if((jogada=="RT"||jogada=="rt"||jogada=="Rt"||jogada=="rT")&&gou2>1&&gou1<5){//DIVISÃO 2PARA 1
                     gou2=gou2-1;gou1=gou1+1;part=2;
-                }else if((jogada=="RT"||jogada=="rt")&&(gou2<=1||gou1==5)){
+                }else if((jogada=="RT"||jogada=="rt"||jogada=="Rt"||jogada=="rT")&&(gou2<=1||gou1==5)){
                     printf("Seus níveis de fúria não permitem divisão!\n"
                            "Jogue novamente!\n");part=1;
                 }
-                else if((jogada=="LL"||jogada=="ll")&&gou1>=1&&gou11>0){//ATAQUE G1G1
+                else if((jogada=="LL"||jogada=="ll"||jogada=="Ll"||jogada=="lL")&&gou1>=1&&gou11>0){//ATAQUE G1G1
                     gou11=gou11+gou1;part=2;
-                }else if((jogada=="LL"||jogada=="ll")&&gou1==0){
+                }else if((jogada=="LL"||jogada=="ll"||jogada=="Ll"||jogada=="lL")&&gou1==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=1;
-                }else if((jogada=="LL"||jogada=="ll")&&gou11==0){
+                }else if((jogada=="LL"||jogada=="ll"||jogada=="Ll"||jogada=="lL")&&gou11==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=1;
                 }
-                else if((jogada=="RL"||jogada=="rl")&&gou2>=1&&gou11>0){//ATAQUE G2G1
+                else if((jogada=="RL"||jogada=="rl"||jogada=="Rl"||jogada=="rL")&&gou2>=1&&gou11>0){//ATAQUE G2G1
                     gou11=gou11+gou2;part=2;
-                }else if((jogada=="RL"||jogada=="rl")&&gou2==0){
+                }else if((jogada=="RL"||jogada=="rl"||jogada=="Rl"||jogada=="rL")&&gou2==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=1;
-                }else if((jogada=="RL"||jogada=="rl")&&gou11==0){
+                }else if((jogada=="RL"||jogada=="rl"||jogada=="Rl"||jogada=="rL")&&gou11==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=1;
                 }
-                else if((jogada=="LR"||jogada=="lr")&&gou1>=1&&gou22>0){//ATAQUE G1G2
+                else if((jogada=="LR"||jogada=="lr"||jogada=="lR"||jogada=="Lr")&&gou1>=1&&gou22>0){//ATAQUE G1G2
                     gou22=gou22+gou1;part=2;
-                }else if((jogada=="LR"||jogada=="lr")&&gou1==0){
+                }else if((jogada=="LR"||jogada=="lr"||jogada=="lR"||jogada=="Lr")&&gou1==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=1;
-                }else if((jogada=="LR"||jogada=="lr")&&gou22==0){
+                }else if((jogada=="LR"||jogada=="lr"||jogada=="lR"||jogada=="Lr")&&gou22==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=1;}
-                else if((jogada=="RR"||jogada=="rr")&&gou2>=1&&gou22>0){//ATAQUE G2G2
+                else if((jogada=="RR"||jogada=="rr"||jogada=="Rr"||jogada=="rR")&&gou2>=1&&gou22>0){//ATAQUE G2G2
                     gou22=gou22+gou2;part=2;
-                }else if((jogada=="RR"||jogada=="rr")&&gou2==0){
+                }else if((jogada=="RR"||jogada=="rr"||jogada=="Rr"||jogada=="rR")&&gou2==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=1;
-                }else if((jogada=="RR"||jogada=="rr")&&gou22==0){
+                }else if((jogada=="RR"||jogada=="rr"||jogada=="Rr"||jogada=="rR")&&gou22==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=1;
                 }
@@ -520,49 +520,49 @@ printf("Bem vindo ao jogo das perguntas!\n"
                 system("cls");
                 if((jogada2=="LT"||jogada2=="lt")&&gou11>1&&gou22<5){//DIVISÃO 1 PARA 2
                     gou11=gou11-1;gou22=gou22+1;part=1;
-                }else if((jogada2=="LT"||jogada2=="lt")&&(gou11<=1||gou22==5)){
+                }else if((jogada2=="LT"||jogada2=="lt"||jogada2=="lT"||jogada2=="Tl")&&(gou11<=1||gou22==5)){
                     printf("Seus níveis de fúria não permitem divisão!\n"
                            "Jogue novamente!\n");part=2;
                 }
-                else if((jogada2=="RT"||jogada2=="rt")&&gou22>1&&gou11<5){//DIVISÃO 2 PARA 1
+                else if((jogada2=="RT"||jogada2=="rt"||jogada2=="rT"||jogada2=="Rt")&&gou22>1&&gou11<5){//DIVISÃO 2 PARA 1
                     gou22=gou22-1;gou11=gou11+1;part=1;
-                }else if((jogada2=="RT"||jogada2=="rt")&&(gou22<=1||gou11==5)){
+                }else if((jogada2=="RT"||jogada2=="rt"||jogada2=="rT"||jogada2=="Rt")&&(gou22<=1||gou11==5)){
                     printf("Seus níveis de fúria não permitem esta divisão!\n"
                            "Jogue novamente!\n");part=2;
                 }
-                else if((jogada2=="LL"||jogada2=="ll")&&gou11>=1&&gou1>0){//ATAQUE G1G1
+                else if((jogada2=="LL"||jogada2=="ll"||jogada2=="Ll"||jogada2=="lL")&&gou11>=1&&gou1>0){//ATAQUE G1G1
                     gou1=gou1+gou11;part=1;
-                }else if((jogada2=="LL"||jogada2=="ll")&&gou11==0){
+                }else if((jogada2=="LL"||jogada2=="ll"||jogada2=="Ll"||jogada2=="lL")&&gou11==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=2;
-                }else if((jogada2=="LL"||jogada2=="ll")&&gou1==0){
+                }else if((jogada2=="LL"||jogada2=="ll"||jogada2=="Ll"||jogada2=="lL")&&gou1==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=2;
                 }
-                else if((jogada2=="RL"||jogada2=="rl")&&gou22>=1&&gou1>0){//ATAQUE G2G1
+                else if((jogada2=="RL"||jogada2=="rl"||jogada2=="Rl"||jogada2=="rL")&&gou22>=1&&gou1>0){//ATAQUE G2G1
                     gou1=gou1+gou22;part=1;
-                }else if((jogada2=="RL"||jogada2=="rl")&&gou22==0){
+                }else if((jogada2=="RL"||jogada2=="rl"||jogada2=="Rl"||jogada2=="rL")&&gou22==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=2;
-                }else if((jogada2=="RL"||jogada2=="rl")&&gou1==0){
+                }else if((jogada2=="RL"||jogada2=="rl"||jogada2=="Rl"||jogada2=="rL")&&gou1==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=2;
                 }
-                else if((jogada2=="LR"||jogada2=="lr")&&gou11>=1&&gou2>0){//ATAQUE G1G2
+                else if((jogada2=="LR"||jogada2=="lr"||jogada2=="Lr"||jogada2=="lR")&&gou11>=1&&gou2>0){//ATAQUE G1G2
                     gou2=gou2+gou11;part=1;
-                }else if((jogada2=="LR"||jogada2=="lr")&&gou11==0){
+                }else if((jogada2=="LR"||jogada2=="lr"||jogada2=="Lr"||jogada2=="lR")&&gou11==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=2;
-                }else if((jogada2=="LR"||jogada2=="lr")&&gou2==0){
+                }else if((jogada2=="LR"||jogada2=="lr"||jogada2=="Lr"||jogada2=="lR")&&gou2==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=2;
                 }
-                else if((jogada2=="RR"||jogada2=="rr")&&gou22>=1&&gou2>0){//ATAQUE G2G2
+                else if((jogada2=="RR"||jogada2=="rr"||jogada2=="Rr"||jogada2=="rR")&&gou22>=1&&gou2>0){//ATAQUE G2G2
                     gou2=gou2+gou22;part=1;
-                }else if((jogada2=="RR"||jogada2=="rr")&&gou22==0){
+                }else if((jogada2=="RR"||jogada2=="rr"||jogada2=="Rr"||jogada2=="rR")&&gou22==0){
                     printf("O gousma selecionado está inutilizável!\n"
                            "Jogue novamente!\n");part=2;
-                }else if((jogada2=="RR"||jogada2=="rr")&&gou2==0){
+                }else if((jogada2=="RR"||jogada2=="rr"||jogada2=="Rr"||jogada2=="rR")&&gou2==0){
                     printf("O gousma inimigo selecionado já foi destruido!\n"
                            "Jogue novamente!\n");part=2;
                 }
