@@ -27,16 +27,22 @@ Sabendo disso, após a seleção do jogo, será apresentada uma mensagem "INICIA
 
 
 Agora que já temos uma ideia de como funcionam algumas coisas para que o programa se inicie e funciona, iremos começar a explicar os jogos: 
+
+
 #JOGO 1
 
 O jogo 1, que é de perguntas e respostas, é bem simples. Após sua seleção no menu, é explicado do que se trata o o jogo, logo em seguida a opção de se você deseja iniciar o jogo ou não (S ou N), com o "cin" (do iostream) como dispositivo de entrada da opção, verifica o valor da variável e classifica se é ou não inválida, se for, você irá entrar em um "Do While", este que irá continuar até que selecione alguma entrada válida; se for válida (Sim(S) ou Não(N)), se sim, você entra no no loop "roda!=0" e o jogo começa, se não, volta ao menu. Após o início do jogo, e o "cls" já tendo limpado as mensagens anteriores, você terá 4 alternativas para cada pergunta, e você poderá fazer sua escolha (alt) com entradas de a-d e A-D (com um scanf), as quais se você utilizar alguma entrada inválida, como "T", o programa solicitará que refaça sua escolha até que ele aceite a entrada; logo em seguida, após a verificação da entrada, se acertar, lhe será apresentado que acertou e você somará 1 ponto, se errar, será apresentada a alternativa correta e você não somará pontos, após isso, será trocado o valor de "roda" a cada fim de pergunta, com resposta certa ou errada. Tendo completado todas as perguntas, será printado no console seu placar de pontos e a mensagem de conclusão do jogo, após isso, será exposta a opção de reiniciar o jogo ou voltar para o menu, onde como nos demais loops, se você entrar com alguma variável inválida, será repetida a opção de escolha até o contrário.
 
 
 ![image](https://github.com/user-attachments/assets/bb9db760-d109-41fb-a2ae-f904bfad066b)
+
 ![image](https://github.com/user-attachments/assets/b70b88e1-9003-43b9-b0f0-9a3070c7c07b)
 
 
+
 #JOGO 2
+
+
 O jogo 2, que é Cobra na Caixa, usa rand() para embaralhar o valor de Cai[], que vai guardar cinco valores diferentes referentes ao valor de status de cada uma das cinco caixas, depois esses valores serão verifivados e reembaralhados caso algum valor se repita em caixas diferentes. Esses valores vão de 1 a 5, e representam o esdado de cada caixa, sendo, as caixas que receberem o valor de 3, 4 e 5, serão as caixas vazias, 1 quando está com a cobra, e 2 quando está com o botão. Esses números não serão exibidos para os jogadores durante a partida e também não se relacionam com a ordem das caixas. Logo depois, vem os primeiros códigos relacionados com a interação com o jogador, que é o switch case, que neste primeiro momento será usado para permitir que o jogador escolha o nome de seu personagem. O comando strcpy() é usado para gravar o nome escolhido nos status do jogador. Depois que os dois jogadores esclherem os seus personagens, o sistema irá sortear um valor entre 0 e 1 e salvará na variável Ver que será importante neste momento em que o jogo entrará em dois while{}, o primeiro é importante para verificar se o jogo ainda não acabou, que funcionará enquanto Ver for 0 ou 1, o segundo roda a jogada do jogador sorteado, sendo Ver=0 para iniciar com primeiro jogador e Ver=1 para começar com o segundo.O jogo começará mostrando cinco caixinhas enumeradas de 1 à 5, esses valores são apenas representativos e não interferem no estado de cada caixa, apenas sinalizando quando elas já foram escolhidas quando o valor mostrado é zero. Para o jogador escolher uma das caixas, ele deverá digitar o valor referente da caixa. Quando ocorrer o input desse valor, ele será lido pelo switch case, que irá zerar esse valor para sinalizar que a caixa foi escolhida, depois o sistema verificará o valor referente a caixa no vetor Cai[], e logo em seguida gera o resultado, prosseguindo a partida ou finalizando depedendo do valor de Cai[] referente. Caso o valor de Cai[] exija que o jogo continue, Ver será alterado para a vez do jogador seguinte, dando sequência ao jogo, e caso Cai[] exija que o jogo pare, Ver será alterado para 3,6,2 ou 4, saindo do while principal e finalizando o jogo dando a opção de reiniciar a partida e de voltar ao menu inicial. Os valores 3,6,2 e 4 do Ver são referente a como o jogo deve reagir com cada situação de finalização do jogo, com 3 e 6 sendo responsáveis para definir o jogador 1 como vencedor e 2 e 4 para o jogador 2 como vencedor. Os valores também darão mais detalhes sobre a condição de virória, 2 para dizer que o segundo ganhou porque escolheu a caixa com o botão, 3 para dizer que o primeiro ganhou porque o segundo escolheu a caixa com a cobra, 4 para dizer que o segundo ganhou porque o primeiro escolheu a caixa com a cobra e 6 para dizer que o primeiro ganhou porque escolheu a caixa com o botão, e todas essas informações aparecerão no fim do jogo para os jogadores. Caso a escolha do jogador para interagir seja inválida (se a caixa escolhida já tiver sido aberta ou o input não corresponda com os comandos do jogo), o valor de Ver não alterará, dando a oportunidade do jogador fazer outra escolha. 
 
 ![image](https://github.com/user-attachments/assets/d099d431-6819-4597-a662-a9c62613ebe7)
@@ -44,6 +50,7 @@ O jogo 2, que é Cobra na Caixa, usa rand() para embaralhar o valor de Cai[], qu
 ![image](https://github.com/user-attachments/assets/a12fb351-d365-4c06-8e7c-2d7725bb7d9d)
           
 ![image](https://github.com/user-attachments/assets/d7705b24-ec3d-4b3a-8104-91cb4af47913)
+
 
 
 #JOGO 3    
@@ -54,9 +61,7 @@ Falando agora do último jogo, nós o iniciamos com um texto explicando os coman
 
 ![image](https://github.com/user-attachments/assets/141e7fd0-cf31-418e-a75e-a03d10b262af)
 
-
 ![image](https://github.com/user-attachments/assets/d6fe7076-5903-4dc9-9951-3cf5cf7f9de0)
-
 
 ![image](https://github.com/user-attachments/assets/495a9cc8-5d85-4db1-981d-d1a72a42b383)
 
